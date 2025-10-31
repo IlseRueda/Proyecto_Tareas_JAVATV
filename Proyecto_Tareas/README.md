@@ -284,25 +284,5 @@ La aplicación maneja los siguientes tipos de errores:
    - Autenticación (signup/signin)
    - Operaciones CRUD de tareas
 
-### Flujo de Pruebas Recomendado
-1. Registrar un nuevo usuario (opcional)
-2. Iniciar sesión con `user` o `admin`
-3. Copiar el token JWT de la respuesta
-4. Usar el token en las peticiones a `/api/tasks`
-5. Probar crear, listar, obtener tareas
-6. Con usuario ADMIN: probar actualizar y eliminar
 
-## Seguridad
 
-- Contraseñas encriptadas con BCrypt
-- Tokens JWT con expiración de 24 horas
-- Autenticación basada en tokens
-- Autorización a nivel de método con `@PreAuthorize`
-- Sesiones stateless (sin estado)
-
-## Autor
-Proyecto desarrollado para la asignatura de Ingeniería de Software  
-**UNAM - Facultad de Ingeniería**
-
-## Licencia
-Este proyecto es de código abierto bajo la licencia Apache 2.0
